@@ -1,0 +1,16 @@
+# Keep local game binaries and large Unity data files out of the public repo
+RimWorldWin64_Data/
+RimWorld.exe
+*.assets
+*.assets.resS
+*.resource
+*.bundle
+*.dll
+*.exe
+*.zip
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+UserSettings/

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171a16">
+  <meta name="description" content="A browser-based colony simulation prototype and RimWorld web-port research lab.">
+  <title>Colony Lab — Web Port Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">⌂</span><div><strong>COLONY LAB</strong><small>WEB PORT RESEARCH</small></div></div>
+    <div class="status"><span class="dot"></span> LOCAL PROTOTYPE <span class="divider">/</span> v0.1</div>
+  </header>
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">BROWSER BUILD · EXPERIMENT 001</p>
+      <h1>Build a colony.<br><em>Keep them alive.</em></h1>
+      <p class="subhead">A small, original colony-simulation prototype used to test browser controls and interface ideas. This is not the original RimWorld game or a port of its proprietary files.</p>
+      <div class="notice"><span>i</span><div><strong>Port status: groundwork</strong><p>The Windows build cannot run directly in a browser. A compatible web build or an authorized source-code port is still needed for the actual game.</p></div></div>
+    </section>
+    <section class="sim-panel" aria-label="Colony prototype">
+      <div class="sim-head"><div><span class="eyebrow">SETTLEMENT 01</span><h2>New Hope</h2></div><div class="day">DAY <strong id="day">1</strong><small id="clock">08:00</small></div></div>
+      <div class="resources" aria-label="Resources"><div><span>FOOD</span><strong id="food">24</strong></div><div><span>WOOD</span><strong id="wood">18</strong></div><div><span>STONE</span><strong id="stone">12</strong></div><div><span>COLONISTS</span><strong id="people">3</strong></div></div>
+      <div class="map-wrap"><div class="map-label"><span>SETTLEMENT MAP</span><span>SELECT A TILE</span></div><div id="map" class="map" role="grid" aria-label="Colony building grid"></div></div>
+      <div class="controls"><div><label for="building">BUILD</label><select id="building"><option value="path">Path · 1 wood</option><option value="garden">Garden · 3 wood</option><option value="bed">Bed · 2 wood</option><option value="wall">Wall · 2 stone</option></select></div><button id="buildBtn" class="primary">Place building</button><button id="endDayBtn" class="secondary">End day ↗</button></div>
+      <div class="log"><div class="log-title">COLONY LOG <button id="clearLog" title="Clear log">CLEAR</button></div><ul id="logList"><li><span>08:00</span> The settlers arrive at New Hope.</li><li><span>08:01</span> Select a tile, then place a structure.</li></ul></div>
+    </section>
+    <section class="footer-note"><span>PROTOTYPE ONLY</span><p>Gameplay and UI are original test code. No original game assets or binaries are included.</p></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
